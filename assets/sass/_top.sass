@@ -1,0 +1,84 @@
+.navbar 
+  padding: 10px 20px
+  a 
+    color: #676767
+    text-decoration: none
+    font-size: 16px
+    font-weight: 500
+    transition: .5s
+    &:hover
+      color: #fff
+  .desktop-menu
+    display: none
+  
+  .mobile-menu
+    .hamburger-menu 
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      height: 18px
+      cursor: pointer
+
+      .bar 
+        width: 25px
+        height: 3px
+        background-color: #fff
+        transition: transform 0.3s ease-in-out
+        &:first-child 
+          transform-origin: top left     
+        &:last-child 
+          transform-origin: bottom left        
+        &.middle 
+          opacity: 0
+        &.active 
+          &:first-child 
+            transform: rotate(38deg) 
+          &:last-child 
+            transform: rotate(-38deg)     
+      
+    
+
+    .mobbar-menu 
+      display: none
+      background: linear-gradient(114.15deg,#272727 10.15%,#141414 89.36%)
+      border-radius: 30px
+      position: absolute
+      top: 50px
+      left: 0
+      width: 100%
+      padding: 10px 20px
+      &.active 
+        display: block
+      li 
+        margin-bottom: 10px
+        a:hover
+          color: #fff
+        button
+          color:#FFFFFF
+          background-color: #323232
+          padding:10.5px 29px
+          border-radius:16px 
+          font-size: 16px
+          font-weight: 600
+          box-shadow: .5px .5px 3px grey 
+          transition: .7s
+          &:hover
+            color: #323232
+            background-color: #fff
+            box-shadow: .5px .5px 3px #fff
+// screen for tablets and laptops
+@media (min-width:800px)
+  .mobile-menu
+    display: none
+  .desktop-menu
+    display: block!important
+    ul
+      width: 352px
+      margin: auto 0
+    button
+      color:#FFFFFF
+      background-color: #323232
+      padding:10.5px 29px
+      border-radius:16px 
+      font-size: 16px
+      font-weight: 600
