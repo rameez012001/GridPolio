@@ -76,24 +76,31 @@ button, button:hover {
 }
 .navbar .mobile-menu .hamburger-menu .bar {
   width: 25px;
-  height: 3px;
+  height: 2px;
   background-color: #fff;
   transition: transform 0.3s ease-in-out;
 }
 .navbar .mobile-menu .hamburger-menu .bar:first-child {
   transform-origin: top left;
+  width: 20px;
 }
 .navbar .mobile-menu .hamburger-menu .bar:last-child {
   transform-origin: bottom left;
+  width: 28px;
+  height: 3px;
 }
 .navbar .mobile-menu .hamburger-menu .bar.middle {
   opacity: 0;
 }
 .navbar .mobile-menu .hamburger-menu .bar.active:first-child {
-  transform: rotate(38deg);
+  transform: rotate(43deg);
+  width: 25px;
+  height: 1px;
 }
 .navbar .mobile-menu .hamburger-menu .bar.active:last-child {
-  transform: rotate(-38deg);
+  transform: rotate(-43deg);
+  width: 25px;
+  height: 1px;
 }
 .navbar .mobile-menu .mobbar-menu {
   display: none;
