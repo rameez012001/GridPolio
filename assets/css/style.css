@@ -51,6 +51,17 @@ button, button:hover {
   outline: none;
 }
 
+svg {
+  cursor: pointer;
+}
+svg:hover {
+  cursor: pointer;
+}
+svg:hover path, svg:hover rect {
+  stroke-opacity: 1;
+  fill-opacity: 1;
+}
+
 .navbar {
   padding: 10px 20px;
 }
@@ -155,6 +166,70 @@ button, button:hover {
     border-radius: 16px;
     font-size: 16px;
     font-weight: 600;
+  }
+}
+.row3 {
+  margin-top: 24px;
+  margin-bottom: 100px;
+}
+.row3 .box31, .row3 .box32 {
+  background-image: linear-gradient(114.15deg, #242424 10.15%, #141414 89.36%);
+  border-radius: 30px;
+  width: 100%;
+  margin: 0.5em 0;
+}
+.row3 .box31 {
+  padding: 30px 24px;
+}
+.row3 .box31 .boxes3 {
+  margin: 0.4em 0;
+  background-image: linear-gradient(114.15deg, #292929 10.15%, #1e1e1e 89.36%);
+  padding: 42px 40px;
+  border-radius: 30px;
+  max-width: 157px;
+  width: 100%;
+}
+.row3 .box31 .boxes3 h2 {
+  font-size: 34px;
+  font-weight: 600;
+}
+.row3 .box31 .boxes3 p {
+  font-size: 12px;
+  font-weight: 600;
+  color: rgba(188, 188, 188, 0.5019607843);
+}
+.row3 .box32 {
+  padding: 0 30px;
+  padding-bottom: 2em;
+}
+.row3 .box32 div {
+  margin-top: 15.5px;
+}
+.row3 .box32 div h1 {
+  font-size: 4.4rem;
+  font-weight: 600;
+}
+.row3 .box32 div h1 span {
+  color: #5b78f6;
+}
+.row3 .box32 div svg {
+  min-width: 46px;
+}
+
+@media (min-width: 768px) {
+  .row3 {
+    justify-content: center;
+  }
+  .box31, .box32 {
+    max-width: 568px;
+  }
+  .boxes {
+    margin: 0;
+  }
+}
+@media (min-width: 1135px) {
+  .row3 {
+    justify-content: space-between;
   }
 }
 footer {
