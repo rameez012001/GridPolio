@@ -1,10 +1,10 @@
 .row2
-    margin-top: 24px
+    margin: 0 auto
     .box21,.box22,.box23
         background-image: linear-gradient(114.15deg,#242424 10.15%,#141414 89.36%)
         border-radius: 30px
-        width:100%
         margin: .5em 0
+        height: 240px
         h2
             font-size: 2rem
             font-weight: 600
@@ -14,15 +14,21 @@
             color: #bcbcbc80
             
     .box21
-        padding: 44px 0 37px
+        width: 100%
+        
+        .box211
+            margin-top: 28px
+            img
+                max-width: 126px
         .box212
-            padding: auto 54px 
+            padding-left:24px
+            padding-right:35px
     .box23
-        .socials
-            margin: .4em 0
+        width: 100%        
+        .box231
             background-image: linear-gradient(114.15deg,#292929 10.15%,#1e1e1e 89.36%)
-            padding: 22px 20px
-            margin: 24px
+            width: 224px!important
+            height: 126px
             border-radius: 30px 
             .socials-inner
                 position: relative
@@ -34,16 +40,21 @@
                     position: absolute
                     left: 30%
                     top: 30%
-
+        .box232
+            padding-left:24px
+            padding-right:35px
+    .box22
+        width: 100%
+        .box222
+            padding:0 0 1em
+            padding-left:24px
+            padding-right:35px
 @media (min-width:768px) 
-    .row2
-        justify-content: space-around!important
+    // .row2
+        
     .box21,.box23
         max-width: 272px
     .box22
         max-width: 568px
     .boxes
-        margin: 0
-@media (min-width:1135px)
-    .row3
-        justify-content: space-between
+        // margin: 0
