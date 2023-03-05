@@ -168,8 +168,70 @@ svg:hover path, svg:hover rect {
     font-weight: 600;
   }
 }
-.row3 {
+.row2 {
   margin-top: 24px;
+}
+.row2 .box21, .row2 .box22, .row2 .box23 {
+  background-image: linear-gradient(114.15deg, #242424 10.15%, #141414 89.36%);
+  border-radius: 30px;
+  width: 100%;
+  margin: 0.5em 0;
+}
+.row2 .box21 h2, .row2 .box22 h2, .row2 .box23 h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.row2 .box21 p, .row2 .box22 p, .row2 .box23 p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: rgba(188, 188, 188, 0.5019607843);
+}
+.row2 .box21 {
+  padding: 44px 0 37px;
+}
+.row2 .box21 .box212 {
+  padding: auto 54px;
+}
+.row2 .box23 .socials {
+  margin: 0.4em 0;
+  background-image: linear-gradient(114.15deg, #292929 10.15%, #1e1e1e 89.36%);
+  padding: 22px 20px;
+  margin: 24px;
+  border-radius: 30px;
+}
+.row2 .box23 .socials .socials-inner {
+  position: relative;
+  width: 82px;
+  height: 82px;
+  background-image: linear-gradient(114.15deg, #353535 10.15%, #292929 89.36%);
+  border-radius: 50%;
+}
+.row2 .box23 .socials .socials-inner svg {
+  position: absolute;
+  left: 30%;
+  top: 30%;
+}
+
+@media (min-width: 768px) {
+  .row2 {
+    justify-content: space-around !important;
+  }
+  .box21, .box23 {
+    max-width: 272px;
+  }
+  .box22 {
+    max-width: 568px;
+  }
+  .boxes {
+    margin: 0;
+  }
+}
+@media (min-width: 1135px) {
+  .row3 {
+    justify-content: space-between;
+  }
+}
+.row3 {
   margin-bottom: 100px;
 }
 .row3 .box31, .row3 .box32 {
