@@ -233,7 +233,7 @@ svg:hover path, svg:hover rect {
   padding-right: 35px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .box21, .box23 {
     max-width: 272px;
   }
