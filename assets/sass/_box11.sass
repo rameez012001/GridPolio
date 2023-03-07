@@ -1,4 +1,5 @@
 .row1
+    margin: 0 auto
     .box11,.box12
         width: 100%
     .box11
@@ -21,11 +22,19 @@
         .box121
             background: linear-gradient(114.15deg,#272727 10.15%,#141414 89.36%)
             border-radius: 30px
+            height: 40px
             overflow-x: hidden
-            padding: 7px 26px
+            padding: 0px 26px
+            .star
+                position: relative
+                img
+                    position: absolute
+                    top: -25px
+                    left: -15px
+
             p
                 width: 178px
-                animation: move 10s linear infinite
+                // animation: move 10s linear infinite
                 margin-right: 26px 
                 white-space: nowrap
                 font-size: 1.2rem
@@ -36,6 +45,7 @@
         .box122,.box123
             background: linear-gradient(114.15deg,#272727 10.15%,#141414 89.36%)
             width: 100%
+            height: 240px
             border-radius: 30px
             margin: .5em 0
             p
