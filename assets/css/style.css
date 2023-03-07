@@ -9,9 +9,9 @@ html {
 }
 
 body {
-  scroll-behavior: smooth;
-  font-family: "Inter", sans-serif;
   font-size: 1.6rem;
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
   background-color: #000;
 }
 
@@ -20,15 +20,15 @@ body {
 }
 
 #logo {
-  font-family: "Outfit", sans-serif;
-  font-size: 3.6rem;
   margin: 0;
+  font-size: 3.6rem;
+  font-family: "Outfit", sans-serif;
   letter-spacing: -2.6px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
   color: #fff;
+  font-weight: 600;
 }
 
 h1 {
@@ -36,14 +36,14 @@ h1 {
 }
 
 a {
-  text-decoration: none;
   cursor: pointer;
+  text-decoration: none;
 }
 
 ul {
-  list-style: none;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 button, button:hover {
@@ -58,18 +58,17 @@ svg:hover {
   cursor: pointer;
 }
 svg:hover path, svg:hover rect {
-  stroke-opacity: 1;
   fill-opacity: 1;
+  stroke-opacity: 1;
 }
 
 .navbar {
   padding: 10px 20px;
 }
 .navbar a {
-  color: #676767;
-  text-decoration: none;
   font-size: 16px;
   font-weight: 500;
+  color: #676767;
   transition: 0.5s;
 }
 .navbar a:hover {
@@ -79,10 +78,10 @@ svg:hover path, svg:hover rect {
   display: none;
 }
 .navbar .mobile-menu .hamburger-menu {
+  height: 18px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 18px;
   cursor: pointer;
 }
 .navbar .mobile-menu .hamburger-menu .bar {
@@ -92,36 +91,36 @@ svg:hover path, svg:hover rect {
   transition: transform 0.3s ease-in-out;
 }
 .navbar .mobile-menu .hamburger-menu .bar:first-child {
-  transform-origin: top left;
   width: 20px;
+  transform-origin: top left;
 }
 .navbar .mobile-menu .hamburger-menu .bar:last-child {
-  transform-origin: bottom left;
   width: 28px;
   height: 3px;
+  transform-origin: bottom left;
 }
 .navbar .mobile-menu .hamburger-menu .bar.middle {
   opacity: 0;
 }
 .navbar .mobile-menu .hamburger-menu .bar.active:first-child {
-  transform: rotate(43deg);
   width: 25px;
   height: 1px;
+  transform: rotate(43deg);
 }
 .navbar .mobile-menu .hamburger-menu .bar.active:last-child {
-  transform: rotate(-43deg);
   width: 25px;
   height: 1px;
+  transform: rotate(-43deg);
 }
 .navbar .mobile-menu .mobbar-menu {
   display: none;
-  background: linear-gradient(114.15deg, #272727 10.15%, #141414 89.36%);
-  border-radius: 30px;
+  width: 100%;
+  padding: 10px 20px;
   position: absolute;
   top: 50px;
   left: 0;
-  width: 100%;
-  padding: 10px 20px;
+  border-radius: 30px;
+  background: linear-gradient(114.15deg, #272727 10.15%, #141414 89.36%);
 }
 .navbar .mobile-menu .mobbar-menu.active {
   display: block;
@@ -133,14 +132,14 @@ svg:hover path, svg:hover rect {
   color: #fff;
 }
 .navbar .mobile-menu .mobbar-menu li button {
-  color: #FFFFFF;
-  background-color: #323232;
-  padding: 10.5px 29px;
-  border-radius: 16px;
   font-size: 16px;
   font-weight: 600;
-  box-shadow: 0.5px 0.5px 3px grey;
+  color: #FFFFFF;
+  padding: 10.5px 29px;
   transition: 0.7s;
+  border-radius: 16px;
+  background-color: #323232;
+  box-shadow: 0.5px 0.5px 3px grey;
 }
 .navbar .mobile-menu .mobbar-menu li button:hover {
   color: #323232;
@@ -155,26 +154,26 @@ svg:hover path, svg:hover rect {
   width: 100%;
 }
 .row1 .box11 {
-  background: linear-gradient(114.15deg, #272727 10.15%, #141414 89.36%);
-  border-radius: 30px;
   padding: 48px 41px 46px 39px;
+  border-radius: 30px;
+  background: linear-gradient(114.15deg, #272727 10.15%, #141414 89.36%);
 }
 .row1 .box11 .proinfo p:nth-child(1) {
-  color: rgba(255, 255, 255, 0.7019607843);
   font-size: 1.4rem;
   font-weight: 600;
+  color: rgba(255, 255, 255, 0.7019607843);
 }
 .row1 .box11 .proinfo p:nth-last-child(1) {
-  color: #a3a3a3;
   font-size: 1.4rem;
   font-weight: 600;
+  color: #a3a3a3;
 }
 .row1 .box12 .box121 {
-  background: linear-gradient(114.15deg, #272727 10.15%, #141414 89.36%);
-  border-radius: 30px;
   height: 40px;
   overflow-x: hidden;
   padding: 0px 26px;
+  border-radius: 30px;
+  background: linear-gradient(114.15deg, #272727 10.15%, #141414 89.36%);
 }
 .row1 .box12 .box121 .star {
   position: relative;
@@ -185,22 +184,23 @@ svg:hover path, svg:hover rect {
   left: -15px;
 }
 .row1 .box12 .box121 p {
-  width: 178px;
-  margin-right: 26px;
-  white-space: nowrap;
   font-size: 1.2rem;
   font-weight: 600;
   color: rgba(188, 188, 188, 0.6);
+  width: 178px;
+  white-space: nowrap;
+  margin-right: 26px;
+  animation: move 10s linear infinite;
 }
 .row1 .box12 .box121 p span {
   color: #fff;
 }
 .row1 .box12 .box122, .row1 .box12 .box123 {
-  background: linear-gradient(114.15deg, #272727 10.15%, #141414 89.36%);
   width: 100%;
   height: 240px;
-  border-radius: 30px;
   margin: 0.5em 0;
+  border-radius: 30px;
+  background: linear-gradient(114.15deg, #272727 10.15%, #141414 89.36%);
 }
 .row1 .box12 .box122 p, .row1 .box12 .box123 p {
   color: rgba(188, 188, 188, 0.5019607843);
@@ -225,10 +225,11 @@ svg:hover path, svg:hover rect {
   margin: 0 auto;
 }
 .row2 .box21, .row2 .box22, .row2 .box23 {
-  background-image: linear-gradient(114.15deg, #242424 10.15%, #141414 89.36%);
-  border-radius: 30px;
-  margin: 0.5em 0;
+  width: 100%;
   height: 240px;
+  margin: 0.5em 0;
+  border-radius: 30px;
+  background-image: linear-gradient(114.15deg, #242424 10.15%, #141414 89.36%);
 }
 .row2 .box21 h2, .row2 .box22 h2, .row2 .box23 h2 {
   font-size: 2rem;
@@ -238,9 +239,6 @@ svg:hover path, svg:hover rect {
   font-size: 1.2rem;
   font-weight: 500;
   color: rgba(188, 188, 188, 0.5019607843);
-}
-.row2 .box21 {
-  width: 100%;
 }
 .row2 .box21 .box211 {
   margin-top: 28px;
@@ -252,21 +250,18 @@ svg:hover path, svg:hover rect {
   padding-left: 24px;
   padding-right: 35px;
 }
-.row2 .box23 {
-  width: 100%;
-}
 .row2 .box23 .box231 {
-  background-image: linear-gradient(114.15deg, #292929 10.15%, #1e1e1e 89.36%);
   width: 224px !important;
   height: 126px;
   border-radius: 30px;
+  background-image: linear-gradient(114.15deg, #292929 10.15%, #1e1e1e 89.36%);
 }
 .row2 .box23 .box231 .socials-inner {
-  position: relative;
   width: 82px;
   height: 82px;
-  background-image: linear-gradient(114.15deg, #353535 10.15%, #292929 89.36%);
+  position: relative;
   border-radius: 50%;
+  background-image: linear-gradient(114.15deg, #353535 10.15%, #292929 89.36%);
 }
 .row2 .box23 .box231 .socials-inner svg {
   position: absolute;
@@ -277,34 +272,29 @@ svg:hover path, svg:hover rect {
   padding-left: 24px;
   padding-right: 35px;
 }
-.row2 .box22 {
-  width: 100%;
-}
 .row2 .box22 .box222 {
-  padding: 0 0 1em;
-  padding-left: 24px;
-  padding-right: 35px;
+  padding: 0 35px 1em 24px;
 }
 
 .row3 {
   margin: 0 auto 100px;
 }
 .row3 .box31, .row3 .box32 {
-  background-image: linear-gradient(114.15deg, #242424 10.15%, #141414 89.36%);
-  border-radius: 30px;
   width: 100%;
   margin: 0.5em 0;
+  border-radius: 30px;
+  background-image: linear-gradient(114.15deg, #242424 10.15%, #141414 89.36%);
 }
 .row3 .box31 {
   padding: 30px 24px;
 }
 .row3 .box31 .boxes3 {
-  margin: 0.4em 0;
-  background-image: linear-gradient(114.15deg, #292929 10.15%, #1e1e1e 89.36%);
-  padding: 42px 40px;
-  border-radius: 30px;
-  max-width: 157px;
   width: 100%;
+  max-width: 157px;
+  padding: 42px 40px;
+  margin: 0.4em 0;
+  border-radius: 30px;
+  background-image: linear-gradient(114.15deg, #292929 10.15%, #1e1e1e 89.36%);
 }
 .row3 .box31 .boxes3 h2 {
   font-size: 34px;
@@ -316,8 +306,7 @@ svg:hover path, svg:hover rect {
   color: rgba(188, 188, 188, 0.5019607843);
 }
 .row3 .box32 {
-  padding: 0 30px;
-  padding-bottom: 2em;
+  padding: 0 30px 2em;
 }
 .row3 .box32 div {
   margin-top: 15.5px;
@@ -414,8 +403,8 @@ footer .footer-nav .footer-links {
 }
 footer .footer-nav .footer-links a {
   color: #676767;
-  transition: 0.7s;
   font-weight: 700;
+  transition: 0.7s;
 }
 footer .footer-nav .footer-links a:hover {
   color: #fff;
