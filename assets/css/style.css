@@ -148,26 +148,6 @@ svg:hover path, svg:hover rect {
   box-shadow: 0.5px 0.5px 3px #fff;
 }
 
-@media (min-width: 800px) {
-  .mobile-menu {
-    display: none;
-  }
-  .desktop-menu {
-    display: block !important;
-  }
-  .desktop-menu ul {
-    width: 352px;
-    margin: auto 0;
-  }
-  .desktop-menu button {
-    color: #FFFFFF;
-    background-color: #323232;
-    padding: 10.5px 29px;
-    border-radius: 16px;
-    font-size: 16px;
-    font-weight: 600;
-  }
-}
 .row1 {
   margin: 0 auto;
 }
@@ -241,30 +221,6 @@ svg:hover path, svg:hover rect {
   margin-bottom: 0.7em;
 }
 
-@media (min-width: 576px) {
-  .box11, .box12 {
-    max-width: 568px;
-  }
-  .box122, .box123 {
-    max-width: 272px;
-  }
-}
-@media screen and (min-width: 992px) and (max-width: 1100px) {
-  .row2 {
-    justify-content: center;
-  }
-}
-@keyframes move {
-  0% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(calc(-100% + 20px));
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
 .row2 {
   margin: 0 auto;
 }
@@ -330,19 +286,6 @@ svg:hover path, svg:hover rect {
   padding-right: 35px;
 }
 
-@media (min-width: 576px) {
-  .box21, .box23 {
-    max-width: 272px;
-  }
-  .box22 {
-    max-width: 568px;
-  }
-}
-@media screen and (min-width: 992px) and (max-width: 1100px) {
-  .row2 {
-    justify-content: center;
-  }
-}
 .row3 {
   margin: 0 auto 100px;
 }
@@ -390,6 +333,58 @@ svg:hover path, svg:hover rect {
   min-width: 46px;
 }
 
+@media (min-width: 800px) {
+  .mobile-menu {
+    display: none;
+  }
+  .desktop-menu {
+    display: block !important;
+  }
+  .desktop-menu ul {
+    width: 352px;
+    margin: auto 0;
+  }
+  .desktop-menu button {
+    color: #FFFFFF;
+    background-color: #323232;
+    padding: 10.5px 29px;
+    border-radius: 16px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
+@media (min-width: 576px) {
+  .box11, .box12 {
+    max-width: 568px;
+  }
+  .box122, .box123 {
+    max-width: 272px;
+  }
+}
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(calc(-100% + 20px));
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@media (min-width: 576px) {
+  .box21, .box23 {
+    max-width: 272px;
+  }
+  .box22 {
+    max-width: 568px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1100px) {
+  .row2 {
+    justify-content: center;
+  }
+}
 @media (min-width: 768px) {
   .row3 {
     justify-content: space-between;
