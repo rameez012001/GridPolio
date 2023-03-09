@@ -1,73 +1,75 @@
-.navbar 
-  padding: 10px 20px
-  a 
-    font-size: 16px
-    font-weight: 500
-    color: #676767
-    transition: .5s
-    &:hover
-      color: #fff
-  .desktop-menu
-    display: none
-  
-  .mobile-menu
-    .hamburger-menu 
-      height: 18px
-      display: flex
-      flex-direction: column
-      justify-content: space-between
-      cursor: pointer
-
-      .bar 
-        width: 25px
-        height: 2px
-        background-color: #fff
-        transition: transform 0.3s ease-in-out
-        &:first-child 
-          width: 20px
-          transform-origin: top left  
-        &:last-child
-          width: 28px       
-          height: 3px
-          transform-origin: bottom left 
-        &.middle 
-          opacity: 0
-        &.active 
-          &:first-child
-            width: 25px
-            height: 1px
-            transform: rotate(43deg) 
-          &:last-child 
-            width: 25px
-            height: 1px
-            transform: rotate(-43deg)          
-    
-
-    .mobbar-menu 
+header
+  margin-bottom: 80px
+  .navbar 
+    padding: 10px 20px
+    a 
+      font-size: 16px
+      font-weight: 500
+      color: #676767
+      transition: .5s
+      &:hover
+        color: #fff
+    .desktop-menu
       display: none
-      width: 100%
-      padding: 10px 20px
-      position: absolute
-      top: 50px
-      left: 0
-      border-radius: 30px
-      background: linear-gradient(114.15deg,#272727 10.15%,#141414 89.36%)
-      &.active 
-        display: block
-      li 
-        margin-bottom: 10px
-        a:hover
-          color: #fff
-        button
-          font-size: 16px
-          font-weight: 600
-          color:#FFFFFF
-          padding:10.5px 29px
-          transition: .7s
-          border-radius:16px
-          background-color: #323232
-          box-shadow: .5px .5px 3px grey 
-          &:hover
-            color: #323232
-            background-color: #fff
-            box-shadow: .5px .5px 3px #fff
+    
+    .mobile-menu
+      .hamburger-menu 
+        height: 18px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        cursor: pointer
+
+        .bar 
+          width: 25px
+          height: 2px
+          background-color: #fff
+          transition: transform 0.3s ease-in-out
+          &:first-child 
+            width: 20px
+            transform-origin: top left  
+          &:last-child
+            width: 28px       
+            height: 3px
+            transform-origin: bottom left 
+          &.middle 
+            opacity: 0
+          &.active 
+            &:first-child
+              width: 25px
+              height: 1px
+              transform: rotate(43deg) 
+            &:last-child 
+              width: 25px
+              height: 1px
+              transform: rotate(-43deg)          
+      
+
+      .mobbar-menu 
+        display: none
+        width: 100%
+        padding: 10px 20px
+        position: absolute
+        top: 50px
+        left: 0
+        border-radius: 30px
+        background: linear-gradient(114.15deg,#272727 10.15%,#141414 89.36%)
+        &.active 
+          display: block
+        li 
+          margin-bottom: 10px
+          a:hover
+            color: #fff
+          button
+            font-size: 16px
+            font-weight: 600
+            color:#FFFFFF
+            padding:10.5px 29px
+            transition: .7s
+            border-radius:16px
+            background-color: #323232
+            box-shadow: .5px .5px 3px grey 
+            &:hover
+              color: #323232
+              background-color: #fff
+              box-shadow: .5px .5px 3px #fff

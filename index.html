@@ -9,7 +9,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Outfit:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <!-- Style Sheets -->
@@ -61,31 +61,32 @@
 
 
 <!--========= MAIN CONTENT========== -->
-        <main>
+        <main class="grid-container row mx-auto">
 
 
-            <!-- CONTAINER FOR ROW 1 -->
-            <div class="row1 row justify-content-evenly">
-
+            <!--ROW 1 -->
                 <!-- PROFILE BOX -->
-                <div class="box11 row col-md-6 justify-content-around">
+                <div class="grid-item1 box11 col-xl-6">
 
-                    <div class="propic col-md-5 d-flex justify-content-center">
-                        <img src="./assets/images/IMAGE.png" alt="">    <!--profile image-->
-                    </div>
-                    <div class="proinfo col-md-5 align-self-center text-center text-md-start">  <!--profile information-->
-                        <p>A WEB DESIGNER</p>
-                        <h1>DAVID HENDERSON.</h1>
-                        <p>I am a Web Designer based in san francisco.</p>
-                    </div>
+                    <div class="box111 row justify-content-around">
+                        <div class="propic col-sm-6 d-flex justify-content-center">
+                            <img src="./assets/images/IMAGE.png" alt="">    <!--profile image-->
+                        </div>
 
+                        <div class="proinfo col-sm-6 align-self-md-center text-center text-md-start mt-4">  <!--profile information-->
+                            <p>A WEB DESIGNER</p>
+                            <h1>DAVID HENDERSON.</h1>
+                            <p>I am a Web Designer based in san francisco.</p>
+                        </div>
+                        
+                    </div>
                 </div>
 
                 <!-- LINKS,WORKS,PROJECTS BOXES -->
-                <div class="box12 row align-items-center col-xl-6 mt-2 mt-xl-0 ">
+                <div class="grid-item2 box12 row align-items-center col-xl-6 gap-4">
 
                     <!-- LINK BANNERS -->
-                    <div class="box121 d-flex align-items-end col-xl-12">
+                    <div class="box121 d-flex align-items-center col-xl-12">
 
                         <p>LATEST WORK AND <span>FEATURED</span></p>
 
@@ -104,17 +105,18 @@
                     </div>
 
                     <!-- CREDENTIALS -->                    
-                    <div class="box122 row justify-content-center col-md-6 align-self-end">
+                    <div class="box122 row  justify-content-center col-md-6 align-self-end">
 
                         <div class="box1221 d-flex justify-content-center">
                             <img src="./assets/images/SIGN.png" alt="google-font">
                         </div>
-                        <div class="box1222 d-flex justify-content-between">
+                        
+                        <div class="box1222 d-flex justify-content-around">
                             <div class="">
                                 <p>MORE ABOUT ME</p>
                                 <h2>Credentials</h2>
                             </div>
-                            <svg class="align-self-end" width="46" height="41" viewBox="0 0 46 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="align-self-center" width="46" height="41" viewBox="0 0 46 41" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M9.93715 15.9009C10.9514 12.1155 13.2829 8.81615 16.5123 6.59604C19.7417 4.37593 23.6571 3.38072 27.5547 3.78935C31.4522 4.19799 35.0762 5.98366 37.7749 8.8253C40.4736 11.6669 42.07 15.3781 42.2771 19.2915C42.4842 23.205 41.2884 27.0639 38.9047 30.1746C36.5211 33.2852 33.1059 35.4434 29.2732 36.2611C25.4406 37.0789 21.4419 36.5025 17.9962 34.6357C14.5505 32.7688 11.8839 29.734 10.4757 26.0768" stroke="white" stroke-opacity="0.2" stroke-linecap="round"/>
                                 <path d="M30.9224 20.2468C25.1291 20.2468 24.618 23.825 24.618 26.3809C24.618 20.5875 21.5509 20.2468 17.9727 20.2468C24.618 20.2468 24.618 16.3278 24.618 13.9423C24.618 19.3948 27.8554 20.2468 30.9224 20.2468Z" stroke="white" stroke-opacity="0.2"/>
                                 <rect y="20.7434" width="0.999999" height="18" transform="rotate(-90 0 20.7434)" fill="white" fill-opacity="0.2"/>
@@ -130,12 +132,12 @@
                             <img src="./assets/images/my works.png" alt="google-font">
                         </div>
 
-                        <div class="box1232 d-flex justify-content-between align-items-end">
+                        <div class="box1232 d-flex justify-content-around align-items-center">
                             <div class="">
                                 <p>SHOWCASE</p>
                                 <h2>Projects</h2>
                             </div>
-                            <svg class="align-self-end" width="46" height="41" viewBox="0 0 46 41" fill="none" xmlns="http://www.w3.org/2000/svg">                             <path d="M9.93715 15.9009C10.9514 12.1155 13.2829 8.81615 16.5123 6.59604C19.7417 4.37593 23.6571 3.38072 27.5547 3.78935C31.4522 4.19799 35.0762 5.98366 37.7749 8.8253C40.4736 11.6669 42.07 15.3781 42.2771 19.2915C42.4842 23.205 41.2884 27.0639 38.9047 30.1746C36.5211 33.2852 33.1059 35.4434 29.2732 36.2611C25.4406 37.0789 21.4419 36.5025 17.9962 34.6357C14.5505 32.7688 11.8839 29.734 10.4757 26.0768" stroke="white" stroke-opacity="0.2" stroke-linecap="round"/>
+                            <svg class="align-self-center mt-2" width="46" height="41" viewBox="0 0 46 41" fill="none" xmlns="http://www.w3.org/2000/svg">                             <path d="M9.93715 15.9009C10.9514 12.1155 13.2829 8.81615 16.5123 6.59604C19.7417 4.37593 23.6571 3.38072 27.5547 3.78935C31.4522 4.19799 35.0762 5.98366 37.7749 8.8253C40.4736 11.6669 42.07 15.3781 42.2771 19.2915C42.4842 23.205 41.2884 27.0639 38.9047 30.1746C36.5211 33.2852 33.1059 35.4434 29.2732 36.2611C25.4406 37.0789 21.4419 36.5025 17.9962 34.6357C14.5505 32.7688 11.8839 29.734 10.4757 26.0768" stroke="white" stroke-opacity="0.2" stroke-linecap="round"/>
                                 <path d="M30.9224 20.2468C25.1291 20.2468 24.618 23.825 24.618 26.3809C24.618 20.5875 21.5509 20.2468 17.9727 20.2468C24.618 20.2468 24.618 16.3278 24.618 13.9423C24.618 19.3948 27.8554 20.2468 30.9224 20.2468Z" stroke="white" stroke-opacity="0.2"/>
                                 <rect y="20.7434" width="0.999999" height="18" transform="rotate(-90 0 20.7434)" fill="white" fill-opacity="0.2"/>
                             </svg>                        
@@ -145,15 +147,12 @@
 
 
                 </div>
-            </div>
             <!-- CONTAINER FOR ROW 1  ENDS HERE-->
 
 
             <!-- CONTAINER FOR ROW 2 -->
-            <div class="row2 row justify-content-center justify-content-xl-around px-md-1">
-
                 <!-- BLOG -->
-                <div class="box21 d-flex flex-column justify-content-evenly col-sm-6 col-xl-3 order-sm-1 order-xl-1 mx-md-1 mx-lg-0 ">
+                <div class="grid-item3 box21 d-flex flex-column justify-content-evenly col-sm-6 col-xl-3 mx-md-1 mx-lg-0 ">
                     <div class="box211 d-flex justify-content-center">
                         <img src="./assets/images/gfonts.png" alt="google-font">
                     </div>
@@ -171,7 +170,7 @@
                 </div>
 
                 <!-- SPECIALIZATION -->
-                <div class="box22 row col-xl-6 col-sm-12 order-sm-3 order-xl-2 align-items-end">
+                <div class="grid-item4 box22 row col-xl-6 col-sm-12 align-items-end">
                     
                     <div class="box221 d-flex justify-content-around">
                         <!-- CAMERA -->
@@ -209,7 +208,7 @@
                 </div>
 
                 <!-- STAY WITH ME -->
-                <div class="box23 d-flex flex-column justify-content-evenly col-sm-6 col-xl-3 order-sm-2 order-xl-3 mx-md-1 mx-lg-0 ">
+                <div class="grid-item5 box23 d-flex flex-column justify-content-evenly col-sm-6 col-xl-3 mx-md-1 mx-lg-0 ">
 
 
                     <div class="box231 d-flex justify-content-evenly align-items-center mx-auto">
@@ -237,14 +236,12 @@
                     </div>
                 </div>
 
-            </div>
             <!-- CONTAINER FOR ROW 2  ENDS HERE-->
 
             <!-- CONTAINER FOR ROW 3 -->
-            <div class="row3 row justify-content-around">
 
                 <!-- EXPERIENCE -->
-                <div class="box31 col-lg-6 row justify-content-around align-items-center">
+                <div class="grid-item6 box31 col-lg-6 row justify-content-around align-items-center">
                     <div class="boxes3 text-center col-md-4">
                         <h2>07</h2>
                         <p>YEARS EXPERIENCE</p>
@@ -260,7 +257,7 @@
                 </div>
 
                 <!-- LETS WORK -->
-                <div class="box32 col-lg-6">
+                <div class="grid-item7 box32 col-lg-6">
                     <svg width="37" height="76" viewBox="0 0 37 76" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M18 75.5001C18 58.4983 7.5 56.9982 0 56.9982C17 56.9982 18 47.9972 18 37.4961C18 56.9982 29.5 56.9982 36.5 56.9982C20.5 56.9982 18 66.4991 18 75.5001Z" stroke="white" stroke-opacity="0.5" stroke-width="2"/>
                         <rect x="17" width="2" height="37.4961" fill="white" fill-opacity="0.5"/>
@@ -275,7 +272,6 @@
                         </svg>
                     </div>
                 </div>
-            </div>
         </main>
 
 <!--========= MAIN CONTENT ENDS========== -->

@@ -1,12 +1,26 @@
-.row1
-    margin: 0 auto
-    .box11,.box12
-        width: 100%
-    .box11
-        padding: 48px 41px 46px 39px
-        border-radius: 30px
-        background: linear-gradient(114.15deg,#272727 10.15%,#141414 89.36%)
+.box11,.box12
+    width: 100%
+.box11
+    padding: 48px 41px 46px 39px
+    border-radius: 30px
+    background: linear-gradient(114.15deg,#272727 10.15%,#141414 89.36%)
+    .box111
+        width: 488px
+        max-width: 100%
+        .propic
+            width: 224px
+            height: 224px
+            padding: 0 !important
+            img
+                width: 100%
+                object-fit: cover
         .proinfo
+            width: 224px
+            padding: 0
+            height: max-content
+            h1
+                font-family:'Outfit', sans-serif
+                font-weight: 500
             p
                 &:nth-child(1)                    
                     font-size: 1.4rem
@@ -16,48 +30,72 @@
                     font-size: 1.4rem
                     font-weight: 600
                     color: #a3a3a3
-                    
                 
-    .box12
-        .box121
-            height: 40px
-            overflow-x: hidden
-            padding: 0px 26px
-            border-radius: 30px
-            background: linear-gradient(114.15deg,#272727 10.15%,#141414 89.36%)
-            .star
-                position: relative
-                img
-                    position: absolute
-                    top: -25px
-                    left: -15px
+            
+.box12
+    margin: 0!important
+    padding: 0
+    .box121
+        width: 100%
+        height: 54px
+        max-width: 568px
+        margin: 0!important
+        padding: 0px
+        overflow-x: hidden
+        border-radius: 30px
+        background: linear-gradient(114.15deg,#272727 10.15%,#141414 89.36%)
+        p
+            font-size: 1.2rem
+            font-weight: 600
+            margin: 0 26px 0 0 
+            color: #bcbcbc99
+            width: 178px                            
+            white-space: nowrap
+            padding: 0 26px
+            // animation: move 10s linear infinite
+            span
+                color: #fff
+    .box122,.box123
+        width: 100%
+        height: 240px
+        padding: 0
+        margin: 0!important
+        border-radius: 30px
+        background: linear-gradient(114.15deg,#272727 10.15%,#141414 89.36%)
+        p
+            font-size: 1.2rem
+            font-weight: 600
+            color: #bcbcbc80
+    .box122
+        // margin-right: 12px
+        .box1221
+            width: 136px
+            height: 92px
+            padding: 0
+            margin: 50px 68px 0 
+            img
+                width: 100%
+                object-fit: cover
+        .box1222
+            padding: 0
+            margin-bottom: .7em
+    .box123
+        // margin-left: 12px
+        .box1231
+            width: 163px
+            height: 118.02px
+            padding: 0
+            margin: 23px 55px 0 54px
+            img
+                width: 100%
+                object-fit: cover                    
+        .box1232
+            padding: 0
+            margin-bottom: .7em
 
-            p
-                font-size: 1.2rem
-                font-weight: 600
-                color: #bcbcbc99
-                width: 178px                                 
-                white-space: nowrap
-                margin-right: 26px
-                animation: move 10s linear infinite
-                span
-                    color: #fff
-        .box122,.box123
-            width: 100%
-            height: 240px
-            margin: .5em 0
-            border-radius: 30px
-            background: linear-gradient(114.15deg,#272727 10.15%,#141414 89.36%)
-            p
-                color: #bcbcbc80
-        .box122
-            margin-right: .5em
-            .box1221
-                margin: 50px 68px 0 
-            .box1222
-                margin-bottom: .7em 
-        .box123
-            .box1231
-                margin: 23px 55px 0 54px
-            .box1232
-                margin-bottom: .7em
+
+@media (min-width:576px)         
+    .box11,.box12
+        max-width: 568px
+    .box122,.box123
+        max-width: 272px
