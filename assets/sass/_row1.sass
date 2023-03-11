@@ -1,16 +1,12 @@
-.box11,.box12
-    width: 100%
 .box11
-    padding: 48px 41px 46px 39px
+    width: 100%
+    padding: 35px 30px 35px 30px
     border-radius: 30px
     background: linear-gradient(114.15deg,#272727 10.15%,#141414 89.36%)
     .box111
-        width: 488px
-        max-width: 100%
         .propic
             width: 224px
-            height: 224px
-            padding: 0 !important
+            padding: 0 
             img
                 width: 100%
                 object-fit: cover
@@ -18,7 +14,9 @@
             width: 224px
             padding: 0
             height: max-content
+            text-align: center
             h1
+                font-size: 3.6rem
                 font-family:'Outfit', sans-serif
                 font-weight: 500
             p
@@ -33,13 +31,13 @@
                 
             
 .box12
-    margin: 0!important
+    width: 100%
+    margin: 0
     padding: 0
     .box121
-        width: 100%
         height: 54px
-        max-width: 568px
-        margin: 0!important
+        max-width: 100%
+        margin: 0
         padding: 0px
         overflow-x: hidden
         border-radius: 30px
@@ -47,27 +45,28 @@
         p
             font-size: 1.2rem
             font-weight: 600
-            margin: 0 26px 0 0 
             color: #bcbcbc99
             width: 178px                            
             white-space: nowrap
             padding: 0 26px
-            // animation: move 10s linear infinite
+            animation: move 10s linear infinite
             span
                 color: #fff
     .box122,.box123
         width: 100%
         height: 240px
         padding: 0
-        margin: 0!important
+        margin: 0
         border-radius: 30px
         background: linear-gradient(114.15deg,#272727 10.15%,#141414 89.36%)
         p
             font-size: 1.2rem
             font-weight: 600
             color: #bcbcbc80
+        h2
+            font-size: 2rem
+
     .box122
-        // margin-right: 12px
         .box1221
             width: 136px
             height: 92px
@@ -80,7 +79,6 @@
             padding: 0
             margin-bottom: .7em
     .box123
-        // margin-left: 12px
         .box1231
             width: 163px
             height: 118.02px
@@ -93,9 +91,20 @@
             padding: 0
             margin-bottom: .7em
 
+@media ( min-width: 576px)
+    .box12
+        .box122,.box123
+            width: calc((100vw - 30px) / 2)
 
-@media (min-width:576px)         
-    .box11,.box12
-        max-width: 568px
-    .box122,.box123
-        max-width: 272px
+@media (min-width:1175px)
+    .box11
+        padding: 48px 41px 46px 39px
+        width: 568px 
+        height: 318px
+    .box12
+        width: 568px
+        .box121
+            width: 100%
+        .box122,.box123
+            width: 272px
+      

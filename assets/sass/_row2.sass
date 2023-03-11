@@ -19,6 +19,12 @@
     .box212
         padding-left:24px   
         padding-right:35px
+
+.box22
+    margin: 0
+    .box222
+        padding:0 35px 18px 24px
+
 .box23
     .box231
         width: 224px!important
@@ -38,16 +44,26 @@
     .box232
         padding-left:24px
         padding-right:35px
-.box22
-    .box222
-        padding:0 35px 1em 24px
 
-@media (min-width:576px)         
-    .box21,.box23
-        max-width: 272px
+@media ( min-width:700px)    
+    .box21
+        order: 3
+        width: calc((100vw - 49px) / 2)
     .box22
-        max-width: 568px
+        order: 5
+    .box23
+        order: 4
+        width: calc((100vw - 49px) / 2)
+        .box231
+            max-width: 100%
 
-@media screen and (min-width: 992px) and (max-width: 1100px)
-  .row2
-    // justify-content: center
+@media ( min-width:1175px)
+    .box21,.box23
+        width: 272px
+    .box21
+        order: 3
+    .box22
+        width: 568px
+        order: 4
+    .box23
+        order: 5
