@@ -228,20 +228,24 @@ header .navbar .mobile-menu .mobbar-menu li button:hover {
   background: linear-gradient(114.15deg, #272727 10.15%, #141414 89.36%);
 }
 .box12 .box122 p, .box12 .box123 p {
-  margin: 0;
-  padding: 0;
-  font-size: 1.2rem;
+  font-family: "Inter", sans-serif;
   font-weight: 600;
-  color: rgba(188, 188, 188, 0.5019607843);
+  font-size: 1.2rem;
   letter-spacing: -0.12px;
   line-height: 16.8px;
-}
-.box12 .box122 h2, .box12 .box123 h2 {
+  color: rgba(188, 188, 188, 0.5);
   margin: 0;
   padding: 0;
+}
+.box12 .box122 h2, .box12 .box123 h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
   font-size: 2rem;
   letter-spacing: -0.4px;
-  line-height: 40px;
+  line-height: 16.8px;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+  padding: 0;
 }
 .box12 .box122 .box1221 {
   width: 136px;
@@ -272,6 +276,8 @@ header .navbar .mobile-menu .mobbar-menu li button:hover {
 
 @media (min-width: 576px) {
   .box12 .box122, .box12 .box123 {
+    width: -moz-calc((100vw - 30px)/2);
+    width: -webkit-calc((100vw - 30px)/2);
     width: calc((100vw - 30px) / 2);
   }
 }
@@ -301,21 +307,24 @@ header .navbar .mobile-menu .mobbar-menu li button:hover {
   background-image: linear-gradient(114.15deg, #242424 10.15%, #141414 89.36%);
 }
 .box21 h2, .box22 h2, .box23 h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  letter-spacing: -0.4px;
+  line-height: 16.8px;
+  color: rgba(255, 255, 255, 0.9);
   margin: 0;
   padding: 0;
-  font-size: 2rem;
-  font-weight: 500;
-  line-height: 40px;
-  letter-spacing: -0.4px;
 }
 .box21 p, .box22 p, .box23 p {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  letter-spacing: -0.12px;
+  line-height: 16.8px;
+  color: rgba(188, 188, 188, 0.5);
   margin: 0;
   padding: 0;
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: rgba(188, 188, 188, 0.5019607843);
-  line-height: 16.8px;
-  letter-spacing: -0.12px;
 }
 
 .box21 .box211 {
@@ -360,6 +369,8 @@ header .navbar .mobile-menu .mobbar-menu li button:hover {
 @media (min-width: 700px) {
   .box21 {
     order: 3;
+    width: -moz-calc((100vw - 49px)/2);
+    width: -webkit-calc((100vw - 49px)/2);
     width: calc((100vw - 49px) / 2);
   }
   .box22 {
@@ -367,6 +378,8 @@ header .navbar .mobile-menu .mobbar-menu li button:hover {
   }
   .box23 {
     order: 4;
+    width: -moz-calc((100vw - 49px)/2);
+    width: -webkit-calc((100vw - 49px)/2);
     width: calc((100vw - 49px) / 2);
   }
   .box23 .box231 {

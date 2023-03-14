@@ -1,3 +1,4 @@
+@use 'mixins' as mx
 .box11
     width: 100%
     padding: 35px 30px 35px 30px
@@ -64,20 +65,9 @@
         border-radius: 30px
         background: linear-gradient(114.15deg,#272727 10.15%,#141414 89.36%)
         p
-            margin: 0
-            padding: 0
-            font-size: 1.2rem
-            font-weight: 600
-            color: #bcbcbc80
-            letter-spacing: -0.12px
-            line-height: 16.8px
+            @include mx.para
         h2
-            margin: 0
-            padding: 0
-            font-size: 2rem
-            letter-spacing: -0.4px
-            line-height: 40px
-
+            @include mx.subheadings()
     .box122
         .box1221
             width: 136px
@@ -105,7 +95,10 @@
 @media ( min-width: 576px)
     .box12
         .box122,.box123
-            width: calc((100vw - 30px) / 2)
+            // width: calc((100vw - 30px) / 2)
+            width: -moz-calc((100vw - 30px)/2)
+            width: -webkit-calc((100vw - 30px)/2)
+            width: calc((100vw - 30px)/2)
 
 @media (min-width:1175px)
     .box11
