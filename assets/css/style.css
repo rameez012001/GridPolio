@@ -206,14 +206,15 @@ header .navbar .mobile-menu .mobbar-menu li button:hover {
   border-radius: 30px;
   background: linear-gradient(114.15deg, #272727 10.15%, #141414 89.36%);
 }
+.box12 .box121 .box1211 {
+  animation: move 10s linear infinite;
+}
 .box12 .box121 p {
   font-size: 1.2rem;
   font-weight: 600;
   color: rgba(188, 188, 188, 0.6);
-  width: 178px;
   white-space: nowrap;
-  padding: 0 26px;
-  animation: move 10s linear infinite;
+  padding: 0;
 }
 .box12 .box121 p span {
   color: #fff;
@@ -484,13 +485,13 @@ header .navbar .mobile-menu .mobbar-menu li button:hover {
 }
 @keyframes move {
   0% {
-    transform: translateX(0);
+    transform: translateX(100%);
   }
   50% {
-    transform: translateX(calc(-100% + 20px));
+    transform: translateX(0%);
   }
   100% {
-    transform: translateX(0);
+    transform: translateX(-100%);
   }
 }
 footer {
