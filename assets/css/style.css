@@ -172,18 +172,24 @@ header .navbar .mobile-menu .mobbar-menu li button:hover {
 }
 .box11 .box111 .proinfo h1 {
   font-size: 3.6rem;
-  font-family: "Outfit", sans-serif;
   font-weight: 500;
+  margin-bottom: 10px;
+  letter-spacing: -0.72px;
+}
+.box11 .box111 .proinfo p {
+  letter-spacing: 0.42px;
 }
 .box11 .box111 .proinfo p:nth-child(1) {
   font-size: 1.4rem;
   font-weight: 600;
   color: rgba(255, 255, 255, 0.7019607843);
+  margin-bottom: 6px;
 }
 .box11 .box111 .proinfo p:nth-last-child(1) {
   font-size: 1.4rem;
   font-weight: 600;
   color: #a3a3a3;
+  margin-bottom: 0;
 }
 
 .box12 {
@@ -221,12 +227,20 @@ header .navbar .mobile-menu .mobbar-menu li button:hover {
   background: linear-gradient(114.15deg, #272727 10.15%, #141414 89.36%);
 }
 .box12 .box122 p, .box12 .box123 p {
+  margin: 0;
+  padding: 0;
   font-size: 1.2rem;
   font-weight: 600;
   color: rgba(188, 188, 188, 0.5019607843);
+  letter-spacing: -0.12px;
+  line-height: 16.8px;
 }
 .box12 .box122 h2, .box12 .box123 h2 {
+  margin: 0;
+  padding: 0;
   font-size: 2rem;
+  letter-spacing: -0.4px;
+  line-height: 40px;
 }
 .box12 .box122 .box1221 {
   width: 136px;
@@ -239,8 +253,7 @@ header .navbar .mobile-menu .mobbar-menu li button:hover {
   object-fit: cover;
 }
 .box12 .box122 .box1222 {
-  padding: 0;
-  margin-bottom: 0.7em;
+  padding: 0 30px 0 24px;
 }
 .box12 .box123 .box1231 {
   width: 163px;
@@ -253,8 +266,7 @@ header .navbar .mobile-menu .mobbar-menu li button:hover {
   object-fit: cover;
 }
 .box12 .box123 .box1232 {
-  padding: 0;
-  margin-bottom: 0.7em;
+  padding: 0 30px 0 24px;
 }
 
 @media (min-width: 576px) {
@@ -267,6 +279,9 @@ header .navbar .mobile-menu .mobbar-menu li button:hover {
     padding: 48px 41px 46px 39px;
     width: 568px;
     height: 318px;
+  }
+  .box11 .proinfo {
+    margin-left: 30px;
   }
   .box12 {
     width: 568px;
@@ -285,13 +300,21 @@ header .navbar .mobile-menu .mobbar-menu li button:hover {
   background-image: linear-gradient(114.15deg, #242424 10.15%, #141414 89.36%);
 }
 .box21 h2, .box22 h2, .box23 h2 {
+  margin: 0;
+  padding: 0;
   font-size: 2rem;
   font-weight: 600;
+  line-height: 40px;
+  letter-spacing: -0.4px;
 }
 .box21 p, .box22 p, .box23 p {
+  margin: 0;
+  padding: 0;
   font-size: 1.2rem;
   font-weight: 500;
   color: rgba(188, 188, 188, 0.5019607843);
+  line-height: 16.8px;
+  letter-spacing: -0.12px;
 }
 
 .box21 .box211 {
@@ -301,15 +324,14 @@ header .navbar .mobile-menu .mobbar-menu li button:hover {
   max-width: 126px;
 }
 .box21 .box212 {
-  padding-left: 24px;
-  padding-right: 35px;
+  padding: 0 30px 0 24px;
 }
 
 .box22 {
   margin: 0;
 }
 .box22 .box222 {
-  padding: 0 35px 18px 24px;
+  padding: 0 30px 18px 29px;
 }
 
 .box23 .box231 {
@@ -331,8 +353,7 @@ header .navbar .mobile-menu .mobbar-menu li button:hover {
   top: 30%;
 }
 .box23 .box232 {
-  padding-left: 24px;
-  padding-right: 35px;
+  padding: 0 30px 0 24px;
 }
 
 @media (min-width: 700px) {
@@ -374,43 +395,59 @@ header .navbar .mobile-menu .mobbar-menu li button:hover {
 }
 
 .row31 {
-  padding: 30px 24px;
+  padding: 30px 0;
+  gap: 24px;
   order: 6;
 }
-.row31 .boxes3 {
+.row31 .boxes {
   width: 100%;
   max-width: 157px;
   height: 180px;
-  padding: 42px 20px;
-  margin: 0.4em 0;
   border-radius: 30px;
   background-image: linear-gradient(114.15deg, #292929 10.15%, #1e1e1e 89.36%);
 }
-.row31 .boxes3 h2 {
-  font-size: 4.4rem;
-  font-weight: 600;
+.row31 .boxes h2 {
+  font-size: 3.4rem;
+  font-weight: 500;
+  letter-spacing: -1.87px;
+  margin: 0 0 13px;
 }
-.row31 .boxes3 p {
+.row31 .boxes p {
   font-size: 1.2rem;
   font-weight: 600;
   color: rgba(188, 188, 188, 0.5019607843);
+  line-height: 16.8px;
+  letter-spacing: -0.12px;
+  margin: 13px 0 0;
+}
+.row31 .boxes1 {
+  padding: 42px 35px 41px 36px;
+}
+.row31 .boxes2 {
+  padding: 42px 39px 41px 40px;
+}
+.row31 .boxes3 {
+  padding: 42px 40px 41px;
 }
 
 .row32 {
-  padding: 0 24px 30px;
+  padding: 0 30px 45px;
   order: 7;
 }
-.row32 div {
+.row32 .row322 {
   margin-top: 15.5px;
 }
-.row32 div h1 {
+.row32 .row322 .row3221 h1 {
   font-size: 4.4rem;
   font-weight: 600;
+  letter-spacing: -1.32px;
+  line-height: 52px;
+  margin: 0;
 }
-.row32 div h1 span {
+.row32 .row322 .row3221 h1 span {
   color: #5b78f6;
 }
-.row32 div svg {
+.row32 .row322 .row3221 svg {
   min-width: 46px;
 }
 
